@@ -14,7 +14,6 @@ import java.util.Set;
 public class AddressBookMain {
     /**
      * create a main method all program execute in main method
-     *
      * @param args no argument
      */
     public static void main(String[] args) {
@@ -93,7 +92,14 @@ public class AddressBookMain {
                     System.out.println("Welcome to the search option:");
                     addressBook.searchByOptions();
                 case 5:
-                    sc.close();// for closing the program
+                    System.out.println("Welcome to view By Option:");
+                    addressBook.viewByOption(addressBookMap);
+                    break;
+                case 6:
+                    /**
+                     * closing the sacnner
+                     */
+                    sc.close();
                     return;
                 default:
                     System.out.println("You Entered Invalid Choice....!");
