@@ -98,11 +98,18 @@ public class AddressBookSystem {
         stateHashMap.entrySet().stream().forEach(e -> System.out.println(e.getKey() + "=" + e.getValue().toString()));
     }
 
+    /**
+     *
+     * creating sortby method for sorting the data 
+     */
     public static List<Contacts> sortBy(Function<? super Contacts, ? extends String> key) {
         return contactList.stream().sorted(Comparator.comparing(key)).collect(Collectors.toList());
     }
 
     public static List<Contacts> sortByZip(Function<? super Contacts, ? extends Long> key) {
+        return contactList.stream().sorted(Comparator.comparing(key)).collect(Collectors.toList());
+    }
+    public static List<Contacts> sortByName(Function<? super Contacts, ? extends String> key) {
         return contactList.stream().sorted(Comparator.comparing(key)).collect(Collectors.toList());
     }
 
@@ -474,7 +481,7 @@ public class AddressBookSystem {
     /**
      * create a method name as sortByOption
      */
-    public static void sortByOption() {
+    public void sortByOption() {
         /**
          * display this options
          */
