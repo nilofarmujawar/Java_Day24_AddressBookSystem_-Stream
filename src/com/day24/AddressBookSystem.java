@@ -485,7 +485,7 @@ public class AddressBookSystem {
         System.out.println("5. By zip");
         System.out.println("6. Back");
         /**
-         * choose the option what u want 
+         * choose the option what u want
          */
         System.out.print("Your choice: ");
 
