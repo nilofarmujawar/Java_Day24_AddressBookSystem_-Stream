@@ -36,7 +36,7 @@ public class AddressBookMain {
              * then display al the option
              */
             System.out.println("\nWelcome to Address Book System");
-            System.out.println("1. New Address Book \n2. Select Address Book \n3. Delete Address Book \n4. Search Contact Data \n5. Exit");
+            System.out.println("1. New Address Book \n2. Select Address Book \n3. Delete Address Book \n4. Search Contact Data \n5. View Contact Data \n6. Exit");
             /**
              * choose the option what u want
              */
